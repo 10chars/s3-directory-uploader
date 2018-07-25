@@ -23,9 +23,9 @@ The ENV variables are `ACCESS_KEY_ID`, `SECRET_ACCESS_KEY` and `BUCKET_NAME`.
 const s3Uploader = require('s3-directory-uploader');
 const path = require('path');
 
-const directoryName = path.resolve(__dirname, 'my-local-directory');
-const deleteExistingFilesInBucket = true;
+const directoryToUpload = path.resolve(__dirname, 'my-local-directory');
 const remotePath = 'some-remote-sub-directory/another-directory/';
+const deleteExistingFilesInBucket = true; // Default: false
 
-s3Uploader(directoryName, credentials, deleteExistingFilesInBucket);
+s3Uploader(directoryToUpload, credentials, deleteExistingFilesInBucket);
 ```
