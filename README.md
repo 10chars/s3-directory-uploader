@@ -25,7 +25,7 @@ const path = require('path');
 
 const directoryToUpload = path.resolve(__dirname, 'my-local-directory');
 const remotePath = 'some-remote-sub-directory/another-directory/';
-const deleteExistingFilesInBucket = true; // Default: false
+const deleteExistingFilesInBucket = true; // Optional (default: false)
 
-s3Uploader(directoryToUpload, credentials, deleteExistingFilesInBucket);
+s3Uploader(directoryToUpload, remotePath, deleteExistingFilesInBucket);
 ```
