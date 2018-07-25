@@ -1,6 +1,6 @@
 {
   "name": "s3-directory-uploader",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "upload directory to AWS S3",
   "main": "index.js",
   "directories": {
@@ -14,7 +14,14 @@
     "url": "git@github.com:10chars/s3-directory-uploader.git"
   },
   "keywords": [
-    "s3", "aws", "upload", "host", "directory", "folder", "versions", "file"
+    "s3",
+    "aws",
+    "upload",
+    "host",
+    "directory",
+    "folder",
+    "versions",
+    "file"
   ],
   "author": {
     "name": "Luke H",
